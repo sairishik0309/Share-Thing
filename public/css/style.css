@@ -1,0 +1,451 @@
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(45deg,rgb(94, 94, 10),rgb(68, 130, 193),black);
+
+  text-align: center;
+}
+
+/* navbar */
+.navbar {
+  position: sticky;
+  height: 35px;
+  width: 100%;
+  background: linear-gradient(45deg,rgb(94, 94, 10),rgb(68, 130, 193),black);
+  padding: 10px 0;
+  z-index: 1;
+}
+
+.navbar a {
+  margin-top:-7px;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* search */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.search-container form {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  color: #333;
+}
+
+.search-container input[type="text"]::placeholder {
+  color: #373535;
+}
+
+.search-container button[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.search-container button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+/*  */
+.heading2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+/* edit */
+.containeredit {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.formedit {
+  display: flex;
+  justify-content: center;
+}
+
+.form_containeredit {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.form_containeredit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form_containeredit input[type="text"],
+.form_containeredit input[type="number"],
+.form_containeredit input[type="file"],
+.form_containeredit textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form_containeredit textarea {
+  height: 200px;
+}
+
+.updatebtn {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.updatebtn:hover {
+  background-color: #3e8e41;
+}
+
+
+
+/* show */
+
+/* CSS for the image container */
+/* CSS for the image container */
+.imgcontainer {
+  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0); */
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* CSS for the image */
+.showimg img {
+  /* box-shadow: 0 4px 8px 0 rgb(0, 0, 0); */
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: auto;
+}
+
+
+/* CSS for the product details container */
+.containershow {
+  
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* CSS for the product title */
+.single_post h1:first-child {
+  font-size: 28px;
+  margin-top: 0;
+}
+
+/* CSS for the product price */
+.single_post h1:nth-child(2) {
+  font-size: 24px;
+  color: #ff7f50;
+}
+
+/* CSS for the product description */
+.single_post p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* CSS for the product creator and created date */
+.single_post h5 {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #888;
+}
+
+.single_post h5 i {
+  font-style: normal;
+}
+
+.editbutton {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+}
+
+.single_post {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 20px 0;
+}
+
+p, b {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-size: 0.8rem;
+  margin-top: 20px;
+}
+
+i {
+  font-style: italic;
+}
+
+/* product-card */
+
+.blog{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* width: auto; */
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  
+}
+.card {
+  
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  transition: 0.3s;
+  /* max-width: 800px;
+   */
+   width: 70%;
+  
+  margin: 0 auto;
+  padding: 20px;
+}
+.prcon{
+  
+  padding: 2px 16px;
+}
+.viewmore {
+  background-color: rgba(0, 0, 0, 0.841);
+  color: rgb(237, 235, 235);
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.viewmore:hover {
+  background-color: green;
+  color: white;
+}
+/* Responsive design */
+@media (max-width: 720px) {
+  h1 {
+    font-size: 2rem;
+  }
+  p, b {
+    font-size: 1.2rem;
+  }
+  /* .blog{
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  } */
+}
+
+/*lognin and signup */
+.button-container {
+  width: 100%;
+  position:fixed;
+  /* background: linear-gradient(60deg,#34eb7ddb,#2cafc3,#bad93c8d) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-btn, .signup-btn {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 500px 10px; 
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-btn:hover, .signup-btn:hover {
+  background-color: #1082a4;
+}
+
+/*login css*/
+/* Center the login form */
+.login_page {
+  width: 47%;
+  margin-top: 8%;
+  margin-left: 27%;
+  /* background: linear-gradient(45deg,#17a2b8,#c82333,#000); */
+  border-radius: 30px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+
+/* Style the form header */
+.login_page h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the form labels */
+.login_page label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+/* Style the form input fields */
+.login_page input[type="email"],
+.login_page input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style the submit button */
+.login_page input[type="submit"] {
+  background-color: #000600;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style the submit button on hover */
+.login_page input[type="submit"]:hover {
+  background-color: #5d0675;
+}
+
+/* profile card */
+.cardprofile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.cardprofile h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.cardprofile p.title {
+  font-size: 1.2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.cardprofile p {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+  text-align: center;
+}
+
+.cardprofile .avtarpr img {
+  border-radius: 50%;
+  margin: 20px 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.cardprofile a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s ease-in-out;
+  margin-top: 1rem;
+}
+
+.cardprofile a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+/* .alert {
+  width: 15%;
+  padding: 10px;
+  margin: 19px;
+  margin-left: 200px;
+  margin-top: 50px;
+  color: rgb(8, 154, 8);
+  background-color: lightgreen;
+  border: 1px solid darkgreen;
+} */

@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+<div class="navbar">
+    <a  href="/home">Home</a>
+    <a  href="/article/new">Add-Product</a>
+    <a href="/profile/User">Profile</a>
+</div>
+<div class="search-container">
+    <form action="/search" method="post">
+        <input  type="text" name="keyi" placeholder="Search...." required>
+        <button  type="submit">search</button>
+    </form>
+</div>
+<div class="imgcontainer">
+    <div class="showimg" >
+        <img src="<%= article.productimg.url %>" alt="Error" width="40%" height="220px" >
+    </div>
+    
+</div>
+<div class="containershow">
+    
+    <div class="single_post">
+        <h1>Product-Details</h1>
+        <h1><%= article.title %></h1>
+        <h1>₹<%= article.price %></h1>
+        <p>Description:<%= article.des %></p>
+        <h5><i>CreatedBy:<%=article.createdname %> on <%= article.createdAt.toLocaleDateString()%> </i></h5>
+    </div>
+
+</div>
+<style>
+    .whatsappicon{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+    }
+</style>
+<div class="whatsappicon">
+    <h2>Contact-Seller</h2>
+    <a href="https://wa.me/<%= article.mob %>" target="_blank"><img src="/uploads/whatsappimg.png" class="rounded-5" width="50px"></a>
+</div>
+<%- include('partials/footer') %>

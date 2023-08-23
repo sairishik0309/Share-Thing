@@ -1,0 +1,55 @@
+<%- include('partials/header') %>
+  <div class="navbar">
+    <a href="/home">Home</a>
+    <a href="/article/new">Add-Product</a>
+    <a href="/profile/User">Profile</a>
+  </div>
+  <div class="cardprofile">
+    <!-- <h2 style="text-align:center">User Profile Card</h2> -->
+    <div class="avtarpr">
+      <img src="<%=currentUserObj.avatar.url%>" class="rounded-3" alt={<%=currentUserObj.username%>} />
+    </div>
+    <h2>Name : <%=currentUserObj.Name %>
+    </h2>
+    <p class="title">E-mail : <%=currentUserObj.username %>
+    </p>
+    <p class="title">Phone : <%=currentUserObj.mob %>
+    </p>
+    <p>Share-Thing Member</p>
+    <a href="/logout">logout</a>
+  </div>
+  </div>
+
+  <div class="onlyuser">
+    <h1>My Post</h1>
+  </div>
+
+  <div class="blog">
+    <% article.forEach(element=> { %>
+    
+     <% if (element.createid==currentUserObj._id) { %>
+      <div class="card">
+        <img src="<%=element.productimg.url%>" alt="Error" style="width:100%">
+        <div class="prcon">
+          <h2>
+            <%= element.title %>
+        </h2>
+        
+            <div class="button">
+              <a class="viewmore" href="/articleview/<%=element.slug %>">View</a>
+
+             <a class="viewmore" href="/article/edit/<%=element.id %>">Edit</a>
+
+            <a class="viewmore"  href="/article/delete/<%=element.id %>">Delete</a> 
+            </div>
+        </div>
+        
+      
+    </div>
+      <% } %>
+
+      <% }); %>
+  </div>
+  
+
+  <%- include('partials/footer') %>

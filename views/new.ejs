@@ -1,0 +1,29 @@
+<%- include('partials/header') %>
+<div class="navbar">
+    <a  href="/home">Home</a>
+    <a  href="/article/new">Add-Product</a>
+    <a href="/profile/User">Profile</a>
+</div>
+<div class="search-container">
+    <form action="/search" method="post">
+        <input  type="text" name="keyi" placeholder="Search...." required>
+        <button  type="submit">search</button>
+    </form>
+</div>
+<div class="containeredit">
+    <h1>Add New Product</h1>
+    <div class="formedit">
+        <div class="form_containeredit">
+            <form action="/article" method="post" enctype="multipart/form-data">
+                
+                <input type="text" name="title" placeholder="Title...." required>
+                <textarea name="des" id="" cols="30" rows="10" placeholder="des...." required></textarea>
+                <input type="number" name="price" placeholder="Price" required>
+                <input type="file" name="productimg" required/>
+                <button class="btn btn-info" type="submit">submit</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>

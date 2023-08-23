@@ -1,0 +1,35 @@
+<%- include('partials/header') %>
+<div class="navbar">
+    <a  href="/home">Home</a>
+    <a  href="/article/new">Add-product</a>
+    
+</div>
+<div class="search-container">
+    <form action="/search" method="post">
+        <input  type="text" name="keyi" placeholder="Search...." required>
+        <button  type="submit">search</button>
+    </form>
+</div>
+<div class="containeredit">
+    <h1>Update Your Data</h1>
+    <div class="formedit ">
+        
+        <div class="form_containeredit">
+            <form action="/article/edit/<%=article.id%>" method="post">
+                <input type="text" name="title" 
+                value=<%=article.title%>>
+                <input type="number" name="price" value=<%=article.price%>>
+
+                <textarea name="des" id="" cols="30" rows="10">
+                    <%=article.des%>
+                </textarea>
+                <!-- <textarea name="info" id="" cols="30" rows="10">
+                    <%=article.info%>
+                </textarea> -->
+                <button class="updatebtn" type="submit">update</button>
+                
+            </form>
+        </div>
+    </div>
+</div>
+<%- include('partials/footer') %>
